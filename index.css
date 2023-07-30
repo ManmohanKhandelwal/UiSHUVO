@@ -1,0 +1,297 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  background-color: #ffffff;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+@media screen and (max-width: 540px) {
+  body {
+    padding-top: 15%; /* Adjust the value as needed */
+  }
+}
+nav {
+  background-color: #0e1218;
+  .text-light::placeholder {
+    /* Set the placeholder color to white */
+    color: white;
+  }
+}
+
+.card {
+  transition: transform 0.3s; /* Add a transition effect for the transform property */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Increase the size of the card on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a box shadow effect on hover */
+}/* CSS for Large Screen*/
+
+@media screen and (min-width: 1000px) {
+  #enroll_now {
+    position: absolute;
+    top: 65%; /* Adjust the vertical position */
+    left: 9%; /* Adjust the horizontal position */
+    background-color: #49ca8a; /* Customize the button background color */
+    color: #fff; /* Customize the button text color */
+    border: none;
+    border-radius: 25px;
+    padding: 1.7361% 3.2552% 1.7361% 3.2552%;
+    cursor: pointer;
+    z-index: 1000000;
+  }
+
+  #our_story {
+    position: absolute;
+    top: 65%; /* Adjust the vertical position */
+    left: 25%; /* Adjust the horizontal position */
+    background-color: transparent; /* Customize the button background color */
+    border-radius: 25px;
+    border: 0.5px solid #ffffffae;
+    padding: 1.6204% 3.3854% 1.6204% 3.2552%;
+    cursor: pointer;
+    z-index: 1000000;
+    color: white;
+  }
+
+  #teachers {
+    position: absolute;
+    top: 64%;
+    left: 43%;
+    border-radius: 5.787%;
+    border: 0.2px solid #f9f9f9; /* Changed border to 2px solid */
+    padding-right: 3.2552%;
+    cursor: pointer;
+    z-index: 1000000;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.09);
+    backdrop-filter: blur(5px);
+    color: white;
+    font-size: larger;
+    text-align: left;
+  }
+
+  #students {
+    position: absolute;
+    top: 77%;
+    left: 73%;
+    border-radius: 50px;
+    border: 0.2px solid #f9f9f9; /* Changed border to 2px solid */
+    padding: 10px; /* Changed padding to make the button more compact */
+    padding-right: 50px; /* Changed padding to make the button more compact */
+    cursor: pointer;
+    z-index: 1000000;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.09);
+    backdrop-filter: blur(5px);
+    color: white;
+    font-size: larger;
+    margin-left: 10px;
+    text-align: left;
+  }
+
+  .inner-circle {
+    width: 50px;
+    height: 50px;
+    border: 0.2px solid #f9f9f9; /* Changed border to 2px solid */
+    border-radius: 100%;
+    overflow: hidden;
+    margin: 10px; /* Adjusted margin to create a gap between circle and text */
+    display: flex; /* Add display: flex; */
+    align-items: center; /* Vertically center the content within the inner circle */
+    margin-right: 10px; /* Adjusted margin to create a gap between circle and text */
+  }
+
+  .inner-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/*CSS for Small Screen  */
+@media screen and (max-width: 1000px) {
+  #enroll_now {
+    position: absolute;
+    top: 65%; /* Adjust the vertical position */
+    left: 9%; /* Adjust the horizontal position */
+    background-color: #49ca8a; /* Customize the button background color */
+    color: #fff; /* Customize the button text color */
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+  #our_story {
+    position: absolute;
+    top: 80%; /* Adjust the vertical position */
+    left: 9%; /* Adjust the horizontal position */
+    background-color: transparent; /* Customize the button background color */
+    border-radius: 25px;
+    border: 0.5px solid #ffffffae;
+    cursor: pointer;
+    z-index: 1000;
+    color: white;
+  }
+
+  #teachers {
+    position: absolute;
+    top: 64%;
+    left: 43%;
+    border: 0.2px solid #f9f9f9; /* Changed border to 2px solid */
+    padding-right: 3.2552%;
+    cursor: pointer;
+    z-index: 1000000;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.09);
+    backdrop-filter: blur(5px);
+    color: white;
+    font-size: larger;
+    text-align: left;
+  }
+
+  #students {
+    position: absolute;
+    top: 77%;
+    left: 73%;
+    border: 0.2px solid #f9f9f9; /* Changed border to 2px solid */
+    padding: 10px; /* Changed padding to make the button more compact */
+    padding-right: 50px; /* Changed padding to make the button more compact */
+    cursor: pointer;
+    z-index: 1000000;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.09);
+    backdrop-filter: blur(5px);
+    color: white;
+    font-size: larger;
+    margin-left: 10px;
+    text-align: left;
+  }
+
+  .inner-circle {
+    width: 50px;
+    height: 50px;
+    border: 0.2px solid #f9f9f9; /* Changed border to 2px solid */
+    border-radius: 100%;
+    overflow: hidden;
+    margin: 10px; /* Adjusted margin to create a gap between circle and text */
+    display: flex; /* Add display: flex; */
+    align-items: center; /* Vertically center the content within the inner circle */
+    margin-right: 10px; /* Adjusted margin to create a gap between circle and text */
+  }
+
+  .inner-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+#nav-btn-inner-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.top-courses {
+  .card {
+    background-color: #ffffff;
+  }
+
+  .face-img {
+    width: 50px;
+    border: 0.2px solid #f9f9f9; /* Changed border to 2px solid */
+    border-radius: 100%;
+    overflow: hidden;
+    margin: 10px; /* Adjusted margin to create a gap between circle and text */
+    align-items: center; /* Vertically center the content within the inner circle */
+    margin-right: 10px; /* Adjusted margin to create a gap between circle and text */
+  }
+}
+
+.features {
+  @media screen and (min-width: 1000px) {
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      transparent 73%,
+      #0e1218eb 40%,
+      #0e1218eb 100%
+    );
+  }
+}
+@media screen and (max-width: 1000px) {
+  .features {
+    .card {
+      background: linear-gradient(
+        to bottom,
+        transparent 0%,
+        transparent 53%,
+        #0e1218eb 50%,
+        #0e1218eb 100%
+      );
+    }
+  }
+}
+
+.all-courses {
+  background-color: #0e1218e4;
+  .custom-card {
+    padding: 5px;
+    border: none;
+    border-radius: 10%;
+    background-color: #0e1218;
+  }
+
+  .face-img {
+    width: 50px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin: 10px; /* Adjusted margin to create a gap between circle and text */
+    align-items: center; /* Vertically center the content within the inner circle */
+    margin-right: 10px; /* Adjusted margin to create a gap between circle and text */
+  }
+
+  .see-all {
+    opacity: 0.5;
+  }
+}
+
+.svg-container1 {
+  position: absolute;
+  top: 60%;
+  left: -100%;
+  right: 0;
+  bottom: 0;
+  z-index: 100000000;
+}
+
+.svg-container2 {
+  position: absolute;
+  top: 60%;
+  left: 95%;
+  right: 0;
+  bottom: 0;
+  z-index: 100000000;
+}
+
+@media screen and (max-width: 1000px) {
+  /* Styles applied only when the screen width is 1000 pixels or less */
+  .svg-container1 {
+    display: none; /* Hide .svg-container1 */
+  }
+
+  .svg-container2 {
+    display: none; /* Hide .svg-container2 */
+  }
+}
+

@@ -1,0 +1,1250 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>UiSHUVO - Home Page</title>
+      <link rel="icon" href="res/title_icon.svg" />
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+        crossorigin="anonymous"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@latest/font/bootstrap-icons.css"
+      />
+      <link rel="stylesheet" href="./index.css" />
+    </head>
+
+    <body>
+      <!-- Nav Details -->
+
+      <nav class="navbar navbar-expand-lg bg-tertiary d-none d-md-flex">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarsExample11"
+            aria-controls="navbarsExample11"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarsExample11">
+            <a class="navbar-brand col-lg-2 text-end text-light" href="#"
+              ><i class="bi bi-power"></i> UiSHUVO</a
+            >
+            <ul class="navbar-nav col-lg-5 justify-content-center">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-light active me-2"
+                  aria-current="page"
+                  href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-light active me-2"
+                  aria-current="page"
+                  href="#top-courses"
+                  >Course</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-light active me-2"
+                  aria-current="page"
+                  href="#teacher_details"
+                  >Mentor</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-light active me-2"
+                  aria-current="page"
+                  href="#pricing"
+                  >Pricing</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-light active"
+                  aria-current="page"
+                  href="#footer"
+                  >Blog</a
+                >
+              </li>
+            </ul>
+            <ul class="navbar-nav col-lg-2 justify-content-lg-center">
+              <form class="d-flex text-light">
+                <input
+                  class="form-control border rounded-pill bg-dark text-light"
+                  type="search"
+                  placeholder="Search Course"
+                  aria-label="Search"
+                />
+              </form>
+            </ul>
+            <ul class="navbar-nav col-lg-3 d flex">
+              <li class="nav-item col-4 justify-content-end">
+                <button class="btn rounded-pill px-4 text-light">Login</button>
+              </li>
+              <li class="nav-item col-8 justify-content-start">
+                <button
+                  class="btn rounded-pill px-4 text-light fw-bold"
+                  style="background-color: #49ca8a"
+                >
+                  Register
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      
+      <nav class="navbar fixed-top d-sm-none ">
+        <div class="container">
+          <a class="navbar-brand d-md-none text-light" href="#">UiSHUVO</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+      
+      <div class="offcanvas offcanvas-end text-bg-dark bg-gradient bg-opacity-25" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <a class="navbar-brand col-lg-2 text-end text-light" href="#"
+          ><i class="bi bi-power"></i> UiSHUVO</a
+        >
+        <ul class="navbar-nav col-lg-5 justify-content-center">
+          <li class="nav-item">
+            <a
+              class="nav-link text-light active me-2"
+              aria-current="page"
+              href="#home"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-light active me-2"
+              aria-current="page"
+              href="#top-courses"
+              >Course</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-light active me-2"
+              aria-current="page"
+              href="#teacher_details"
+              >Mentor</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-light active me-2"
+              aria-current="page"
+              href="#pricing"
+              >Pricing</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-light active"
+              aria-current="page"
+              href="#footer"
+              >Blog</a
+            >
+          </li>
+        </ul>
+        <ul class="navbar-nav col-lg-2 justify-content-lg-center">
+          <form class="d-flex text-light">
+            <input
+              class="form-control border rounded-pill bg-dark text-light"
+              type="search"
+              placeholder="Search Course"
+              aria-label="Search"
+            />
+          </form>
+        </ul>
+        <ul class="navbar-nav col-lg-3 d flex">
+          <li class="nav-item col-4 justify-content-end">
+            <button class="btn rounded-pill px-4 text-light">Login</button>
+          </li>
+          <li class="nav-item col-8 justify-content-start">
+            <button
+              class="btn rounded-pill px-4 text-light fw-bold"
+              style="background-color: #49ca8a"
+            >
+              Register
+            </button>
+          </li>
+        </ul>
+        </div>
+      </div>
+      
+
+      <!-- Banner Details -->
+
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide"
+        data-ride="carousel"
+        id="home"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="d-block w-100 h-100"
+              src="./res/banner/Banner.jpg"
+              alt="First slide"
+            />
+            <!-- Apply styles for lg screens -->
+            <div class="d-none d-lg-block">
+              <button
+                type="button"
+                id="enroll_now"
+                class="rounded-pill btn-lg mx-auto px-5 py-3"
+              >
+                Enroll Now <i class="bi bi-arrow-up-right"></i>
+              </button>
+              <button
+                type="button"
+                id="our_story"
+                class="rounded-pill btn-lg mx-auto px-5 py-3"
+              >
+                <i class="bi bi-play-circle-fill"></i> Our Story
+              </button>
+              <button
+                type="button"
+                id="teachers"
+                class="rounded-pill btn-lg mx-auto pe-5 py-1"
+              >
+                <div class="inner-circle">
+                  <img src="./res/banner/fire.png" class="img-fluid" />
+                </div>
+                <div id="nav-btn-inner-text">
+                  <div><b>100+</b></div>
+                  <div>Expert Teachers</div>
+                </div>
+              </button>
+              <button
+                type="button"
+                id="students"
+                class="rounded-pill btn-lg mx-auto pe-5 py-1"
+              >
+                <div class="inner-circle">
+                  <img src="./res/banner/star.png" class="img-fluid" />
+                </div>
+                <div id="nav-btn-inner-text">
+                  <div><b>20K+</b></div>
+                  <div>Happy Students</div>
+                </div>
+              </button>
+            </div>
+
+
+
+            <!-- Apply styles for sm screens -->
+            <div class="d-block d-md-none">
+              <button
+                type="button"
+                id="enroll_now"
+                class="rounded-pill btn-sm mx-auto px-1 py-0.5 fs-8"
+              > 
+                Enroll Now <i class="bi bi-arrow-up-right"></i>
+              </button>
+              <button
+                type="button"
+                id="our_story"
+                class="rounded-pill btn-sm mx-auto px-2 py-0.5 fs-8 "
+              >
+                <i class="bi bi-play-circle-fill"></i> Our Story
+              </button>
+              <button
+                type="button"
+                id="teachers"
+                class="rounded-pill btn-sm mx-auto  d-none d-lg-block"
+              >
+                <div class="inner-circle">
+                  <img src="./res/banner/fire.png" class="img-fluid" />
+                </div>
+                <div id="nav-btn-inner-text">
+                  <div><b>100+</b></div>
+                  <div>Expert Teachers</div>
+                </div>
+              </button>
+              <button
+                type="button"
+                id="students"
+                class="rounded-pill btn-sm mx-auto  d-none d-lg-block"
+              >
+                <div class="inner-circle">
+                  <img src="./res/banner/star.png" class="img-fluid" />
+                </div>
+                <div id="nav-btn-inner-text">
+                  <div><b>20K+</b></div>
+                  <div>Happy Students</div>
+                </div>
+              </button>
+            </div>
+          </div>
+          >
+        </div>
+      </div>
+
+      <!-- Top Courses Details -->
+
+      <div class="container top-courses" id="top-courses">
+        <div class="row mt-5">
+          <div class="col-10 col-sm-6 fs-3 fw-bold">
+            Our <span style="color: #49ca8a">Top Courses</span>
+          </div>
+          <div class="col-2 col-sm-6 d-flex justify-content-end">
+            <button
+              type="button"
+              class="btn border rounded-pill fw-bold"
+              style="background-color: rgba(128, 128, 128, 0.19)"
+            >
+              <i class="bi bi-arrow-right"></i> View All
+            </button>
+          </div>
+        </div>
+        
+        <div class="row">
+          <!-- Card 1 -->
+          <div class="col-sm-12 col-md-6 col-lg-4 my-3">
+            <div
+              class="card h-100 border border-secondary rounded rounded-5 border border-2"
+            >
+              <div class="card-body">
+                <h5 class="card-title">
+                  <div class="row">
+                    <div class="col-10 d-flex align-items-center">
+                      <img class="face-img" src="res/courses/face.png" alt="" />
+                      <span class="teacher-name">Arefin Shuvo</span>
+                    </div>
+                    <div
+                      class="col-2 d-flex justify-content-end align-items-center"
+                    >
+                      <div class="px-0 border border-0 align-items-center">
+                        <span class="bi bi-heart me-1"></span>
+                        <span class="likes">4.8</span>
+                      </div>
+                    </div>
+                  </div>
+                </h5>
+                <p class="card-text">
+                  Complete Web Design: from Figma to Webflow to Freelancing Course
+                  2023
+                </p>
+              </div>
+              <div
+                class="card-footer d-flex justify-content-between align-items-center"
+              >
+                <span>Enroll Now</span>
+                <i class="bi bi-arrow-right next"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-sm-12 col-md-6 col-lg-4 my-3">
+            <div
+              class="card h-100 border border-secondary rounded rounded-5 border border-2"
+            >
+              <div class="card-body">
+                <h5 class="card-title">
+                  <div class="row">
+                    <div class="col-10 d-flex align-items-center">
+                      <img class="face-img" src="res/courses/face.png" alt="" />
+                      <span class="teacher-name">Dianne Russell</span>
+                    </div>
+                    <div
+                      class="col-2 d-flex justify-content-end align-items-center"
+                    >
+                      <div class="px-0 border border-0 align-items-center">
+                        <span class="bi bi-heart me-1"></span>
+                        <span class="likes">4.8</span>
+                      </div>
+                    </div>
+                  </div>
+                </h5>
+                <p class="card-text">
+                  Web Development Bootcamp: Build Modern Websites from Scratch
+                </p>
+              </div>
+              <div
+                class="card-footer d-flex justify-content-between align-items-center"
+              >
+                <span>Enroll Now</span>
+                <i class="bi bi-arrow-right next"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-sm-12 col-md-6 col-lg-4 my-3">
+            <div
+              class="card h-100 border border-secondary rounded rounded-5 border border-2"
+            >
+              <div class="card-body">
+                <h5 class="card-title">
+                  <div class="row">
+                    <div class="col-10 d-flex align-items-center">
+                      <img class="face-img" src="res/courses/face.png" alt="" />
+                      <span class="teacher-name">Jerome Bell</span>
+                    </div>
+                    <div
+                      class="col-2 d-flex justify-content-end align-items-center"
+                    >
+                      <div class="px-0 border border-0 align-items-center">
+                        <span class="bi bi-heart me-1"></span>
+                        <span class="likes">4.8</span>
+                      </div>
+                    </div>
+                  </div>
+                </h5>
+                <p class="card-text">
+                  Data Science Fundamentals: Learn to Analyze Data and Make
+                  Informed Decisions
+                </p>
+              </div>
+              <div
+                class="card-footer d-flex justify-content-between align-items-center"
+              >
+                <span>Enroll Now</span>
+                <i class="bi bi-arrow-right next"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-sm-12 col-md-6 col-lg-4 my-3">
+            <div
+              class="card h-100 border border-secondary rounded rounded-5 border border-2"
+            >
+              <div class="card-body">
+                <h5 class="card-title">
+                  <div class="row">
+                    <div class="col-10 d-flex align-items-center">
+                      <img class="face-img" src="res/courses/face.png" alt="" />
+                      <span class="teacher-name">Jelly Wilson</span>
+                    </div>
+                    <div
+                      class="col-2 d-flex justify-content-end align-items-center"
+                    >
+                      <div class="px-0 border border-0 align-items-center">
+                        <span class="bi bi-heart me-1"></span>
+                        <span class="likes">4.8</span>
+                      </div>
+                    </div>
+                  </div>
+                </h5>
+                <p class="card-text">
+                  Graphic Design for Beginners: Create Stunning Visuals for Your
+                  Brand
+                </p>
+              </div>
+              <div
+                class="card-footer d-flex justify-content-between align-items-center"
+              >
+                <span>Enroll Now</span>
+                <i class="bi bi-arrow-right next"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="col-sm-12 col-md-6 col-lg-4 my-3">
+            <div
+              class="card h-100 border border-secondary rounded rounded-5 border border-2"
+            >
+              <div class="card-body">
+                <h5 class="card-title">
+                  <div class="row">
+                    <div class="col-10 d-flex align-items-center">
+                      <img class="face-img" src="res/courses/face.png" alt="" />
+                      <span class="teacher-name">Robert Fox</span>
+                    </div>
+                    <div
+                      class="col-2 d-flex justify-content-end align-items-center"
+                    >
+                      <div class="px-0 border border-0 align-items-center">
+                        <span class="bi bi-heart me-1"></span>
+                        <span class="likes">4.8</span>
+                      </div>
+                    </div>
+                  </div>
+                </h5>
+                <p class="card-text">
+                  Social Media Marketing: Boost Your Online Presence and
+                  Engagement
+                </p>
+              </div>
+              <div
+                class="card-footer d-flex justify-content-between align-items-center"
+              >
+                <span>Enroll Now</span>
+                <i class="bi bi-arrow-right next"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="col-sm-12 col-md-6 col-lg-4 my-3">
+            <div
+              class="card h-100 border border-secondary rounded rounded-5 border border-2"
+            >
+              <div class="card-body">
+                <h5 class="card-title">
+                  <div class="row">
+                    <div class="col-10 d-flex align-items-center">
+                      <img class="face-img" src="res/courses/face.png" alt="" />
+                      <span class="teacher-name">Kathryn Murphy</span>
+                    </div>
+                    <div
+                      class="col-2 d-flex justify-content-end align-items-center"
+                    >
+                      <div class="px-0 border border-0 align-items-center">
+                        <span class="bi bi-heart me-1"></span>
+                        <span class="likes">4.8</span>
+                      </div>
+                    </div>
+                  </div>
+                </h5>
+                <p class="card-text">
+                  Introduction to Python Programming: Code Your Way to Success
+                </p>
+              </div>
+              <div
+                class="card-footer d-flex justify-content-between align-items-center"
+              >
+                <span>Enroll Now</span>
+                <i class="bi bi-arrow-right next"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Features-->
+
+      <div class="container text-center features">
+        <div class="row mt-5">
+          <div class="col-12">
+            <button
+              type="button"
+              class="btn border border-0 rounded-pill px-4 mb-3"
+              style="background-color: rgba(128, 128, 128, 0.19)"
+            >
+              Features
+            </button>
+          </div>
+          <div class="col-12 fs-3 fw-bold">
+            Why We
+            <span style="color: #49ca8a">Are Better Than </span>Others !
+          </div>
+          <div class="col-12">
+            Empowering You To Reach Your Goals Through Online Education
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-4 col-md-6 col-sm-12 pt-4">
+            <div class="card h-100 align-items-center text-center bg-opacity-25 border rounded-4" style="background-color: rgba(255, 255, 255, 0.05)">
+              <i class="bi bi-patch-check mt-5 p-3 border rounded-circle" style="background-color: whitesmoke"></i>
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Certified Platform</h5>
+                <p class="card-text text-light">
+                  We Empowering you to reach your goals through online education!
+                </p>
+                <p class="know_more text-light">
+                  Know More <i class="bi bi-arrow-right"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 pt-4">
+            <div class="card h-100 align-items-center text-center bg-opacity-25 border rounded-4" style="background-color: rgba(255, 255, 255, 0.05)">
+              <i class="bi bi-hand-thumbs-up mt-5 p-3 border rounded-circle" style="background-color: rgba(0, 128, 0, 0.133)"></i>
+              <div class="card-body">
+                <h5 class="card-title fw-bold">World-Class Content</h5>
+                <p class="card-text text-light">
+                  We Empowering you to reach your goals through online education!
+                </p>
+                <p class="know_more text-light">
+                  Know More <i class="bi bi-arrow-right"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 pt-4">
+            <div class="card h-100 align-items-center text-center bg-opacity-25 border rounded-4" style="background-color: rgba(255, 255, 255, 0.05)">
+              <i class="bi bi-headset mt-5 p-3 border rounded-circle" style="background-color: rgba(57, 255, 47, 0.362)"></i>
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Online Support</h5>
+                <p class="card-text text-light">
+                  We Empowering you to reach your goals through online education!
+                </p>
+                <p class="know_more text-light">
+                  Know More <i class="bi bi-arrow-right"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <!-- All Courses Details -->
+
+      <div class="container pt-5 all-courses">
+        <div class="row">
+          <div class="col-10 col-sm-12 fs-3 fw-bold">
+            <span style="color: #ffffff">Explore Our </span
+            ><span style="color: #49ca8a">All Courses</span>
+          </div>
+          <div class="col-2  col-sm-12 d-grid d-flex justify-content-end">
+            <button type="button" class="btn border rounded-pill fw-bold" style="background-color: rgba(128, 128, 128, 0.19)">
+              <i class="bi bi-arrow-right"></i> View All
+            </button>
+          </div>      </div>
+        <div class="row">
+          <div class="col-12">
+            <ul class="nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-primary active"
+                  aria-current="page"
+                  href="#"
+                  >All Courses
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary" href="#">UI/UX Design </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary" href="#">Marketing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary">Web Development </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary" href="#">Product Design </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary" href="#">Graphic Design </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary">SEO </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+          <div class="col">
+            <div
+              class="card h-100 border border-secondary rounded rounded-5 text-light p-2 custom-card"
+            >
+              <img
+                src="https://source.unsplash.com/cvBBO4PzWPg/400x300/"
+                class="card-img-top rounded-5"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <div class="row">
+                    <div class="col-10 d-flex align-items-center">
+                      <img class="face-img" src="res/courses/face.png" alt="" />
+                      <span class="teacher-name">Marvin McKinney </span>
+                    </div>
+                    <div
+                      class="col-2 d-flex justify-content-end align-items-center"
+                    >
+                      <div class="px-0 border border-0 align-items-center">
+                        <span class="bi bi-heart me-1"></span>
+                        <span class="likes">4.8</span>
+                      </div>
+                    </div>
+                  </div>
+                </h5>
+
+                <p class="card-text">
+                  Complete Web Design: from Figma to Webflow to Freelancing Course
+                  2023
+                </p>
+                <div
+                  class="card-footer d-flex justify-content-between align-items-center"
+                >
+                  <span>Enroll Now</span> <i class="bi bi-arrow-right next"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card h-100 border border-secondary rounded rounded-5 text-light p-2 custom-card"
+            >
+              <img
+                src="https://source.unsplash.com/vpOeXr5wmR4/400x300/"
+                class="card-img-top rounded-5"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <div class="row">
+                    <div class="col-10 d-flex align-items-center">
+                      <img class="face-img" src="res/courses/face.png" alt="" />
+                      <span class="teacher-name">Arlene McCoy </span>
+                    </div>
+                    <div
+                      class="col-2 d-flex justify-content-end align-items-center"
+                    >
+                      <div class="px-0 border border-0 align-items-center">
+                        <span class="bi bi-heart me-1"></span>
+                        <span class="likes">4.8</span>
+                      </div>
+                    </div>
+                  </div>
+                </h5>
+
+                <p class="card-text">
+                  Web Development Bootcamp: Build Modern Websites from Scratch
+                </p>
+                <div
+                  class="card-footer d-flex justify-content-between align-items-center"
+                >
+                  <span>Enroll Now</span> <i class="bi bi-arrow-right next"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card h-100 border border-secondary rounded rounded-5 text-light p-2 custom-card"
+            >
+              <img
+                src="https://source.unsplash.com/f77Bh3inUpE/400x300/"
+                class="card-img-top rounded-5"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <div class="row">
+                    <div class="col-10 d-flex align-items-center">
+                      <img class="face-img" src="res/courses/face.png" alt="" />
+                      <span class="teacher-name">Brooklyn Simmons </span>
+                    </div>
+                    <div
+                      class="col-2 d-flex justify-content-end align-items-center"
+                    >
+                      <div class="px-0 border border-0 align-items-center">
+                        <span class="bi bi-heart me-1"></span>
+                        <span class="likes">4.8</span>
+                      </div>
+                    </div>
+                  </div>
+                </h5>
+
+                <p class="card-text">
+                  Data Science Fundamentals: Learn to Analyze Data and Make
+                  Informed Decisions
+                </p>
+                <div
+                  class="card-footer d-flex justify-content-between align-items-center"
+                >
+                  <span>Enroll Now</span> <i class="bi bi-arrow-right next"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card h-100 border border-secondary rounded rounded-5 text-light p-2 custom-card"
+            >
+              <img
+                src="https://source.unsplash.com/lYFERR5dTG4/400x300/"
+                class="card-img-top rounded-5"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <div class="row">
+                    <div class="col-10 d-flex align-items-center">
+                      <img class="face-img" src="res/courses/face.png" alt="" />
+                      <span class="teacher-name">Dianne Russell</span>
+                    </div>
+                    <div
+                      class="col-2 d-flex justify-content-end align-items-center"
+                    >
+                      <div class="px-0 border border-0 align-items-center">
+                        <span class="bi bi-heart me-1"></span>
+                        <span class="likes">4.8</span>
+                      </div>
+                    </div>
+                  </div>
+                </h5>
+
+                <p class="card-text">
+                  Graphic Design for Beginners: Create Stunning Visuals for Your
+                  Brand
+                </p>
+                <div class="card-footer">
+                  Enroll Now <i class="bi bi-arrow-right next"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card h-100 border border-secondary rounded rounded-5 text-light p-2 custom-card"
+            >
+              <img
+                src="https://source.unsplash.com/mKhPLJ5JQI4/400x300/"
+                class="card-img-top rounded-5"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <div class="row">
+                    <div class="col-10 d-flex align-items-center">
+                      <img class="face-img" src="res/courses/face.png" alt="" />
+                      <span class="teacher-name">Flyod Miles </span>
+                    </div>
+                    <div
+                      class="col-2 d-flex justify-content-end align-items-center"
+                    >
+                      <div class="px-0 border border-0 align-items-center">
+                        <span class="bi bi-heart me-1"></span>
+                        <span class="likes">4.8</span>
+                      </div>
+                    </div>
+                  </div>
+                </h5>
+
+                <p class="card-text">
+                  Social Media Marketing: Boost Your Online Presence and
+                  Engagement
+                </p>
+                <div
+                  class="card-footer d-flex justify-content-between align-items-center"
+                >
+                  <span>Enroll Now</span> <i class="bi bi-arrow-right next"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card h-100 border border-secondary rounded rounded-5 text-light p-2 custom-card"
+            >
+              <img
+                src="https://source.unsplash.com/mKhPLJ5JQI4/400x300/"
+                class="card-img-top rounded-5"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <div class="row">
+                    <div class="col-10 d-flex align-items-center">
+                      <img class="face-img" src="res/courses/face.png" alt="" />
+                      <span class="teacher-name">Flyod Miles </span>
+                    </div>
+                    <div
+                      class="col-2 d-flex justify-content-end align-items-center"
+                    >
+                      <div class="px-0 border border-0 align-items-center">
+                        <span class="bi bi-heart me-1"></span>
+                        <span class="likes">4.8</span>
+                      </div>
+                    </div>
+                  </div>
+                </h5>
+
+                <p class="card-text">
+                  Social Media Marketing: Boost Your Online Presence and
+                  Engagement
+                </p>
+                <div class="card-footer">
+                  Enroll Now <i class="bi bi-arrow-right next"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Teacher Details -->
+
+      <div
+        class="container teacher_details text-center"
+        style="background-color: #0e1218"
+        id="teacher_details"
+      >
+        <div class="row">
+          <div class="col-12 mt-5">
+            <button
+              type="button"
+              class="btn border border-0 rounded-pill fw-bold text-light"
+              style="background-color: rgba(245, 245, 245, 0.196)"
+            >
+              Mentors
+            </button>
+          </div>
+          <div class="col-12 fs-3 text-light">
+            Transform
+            <span style="color: #49ca8a">Your Life Through Online </span>Learning
+            !
+          </div>
+          <div class="col-12 text-light pt-2 pb-5">
+            Empowering You To Reach Your Goals Through Online Education
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div
+              class="card h-100 d-flex align-items-center justify-content-center"
+              style="background-color: rgba(14, 18, 24, 0.5)"
+            >
+              <img
+                src="https://source.unsplash.com/QXevDflbl8A/300x220/"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="svg-container1 text-light">
+                <i
+                  class="bi bi-arrow-up-left fw-bold fs-3 p-1 border border-5 rounded-5 px-2 border-white"
+                  style="font-size: 3rem; background-color: #0e1218"
+                ></i>
+              </div>
+
+              <div class="card-body text-light">
+                <h5 class="card-title">Brooky Simpsons</h5>
+                <p class="card-text">Expert Web Developer</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-light mb-3"
+                  >Courses <i class="bi bi-arrow-right next"></i
+                ></small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card h-100 d-flex align-items-center justify-content-center"
+              style="background-color: rgba(14, 18, 24, 0.5)"
+            >
+              <img
+                src="https://source.unsplash.com/rDEOVtE7vOs/300x220/"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-light">
+                <h5 class="card-title">Brooky Simpsons</h5>
+                <p class="card-text">Expert Web Developer</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-light mb-3"
+                  >Courses <i class="bi bi-arrow-right next"></i
+                ></small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card h-100 d-flex align-items-center justify-content-center"
+              style="background-color: rgba(14, 18, 24, 0.5)"
+            >
+              <img
+                src="https://source.unsplash.com/0YHIlxeCuhg/300x220/"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="svg-container2 text-light">
+                <i
+                  class="bi bi-arrow-up-right fw-bold fs-3 p-1 border border-5 rounded-5 px-2 border-white"
+                  style="font-size: 3rem; background-color: #0e1218"
+                ></i>
+              </div>
+
+              <div class="card-body text-light">
+                <h5 class="card-title">Brooky Simpsons</h5>
+                <p class="card-text">Expert Web Developer</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-light mb-3"
+                  >Courses <i class="bi bi-arrow-right next"></i
+                ></small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Pricing-->
+
+      <div class="container pt-4" id="pricing">
+        <div class="row text-center">
+          <div class="col-12">
+            <button
+              type="button"
+              class="rounded-pill text-light px-4 py-2 border-0"
+              style="background-color: #49ca8a"
+            >
+              Meet All Members <i class="bi bi-arrow-up-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="row">
+            <div class="col-12 col-lg-10 fs-3 fw-bold">
+              <span style="color: #49ca8a">Exclusive Plans</span> For You To Choose
+            </div>
+            <div class="col-12 col-lg-2 d-grid pt-lg-3 py-sm-2">
+              <button
+                type="button"
+                class="btn border rounded-pill fw-bold"
+                style="background-color: rgba(128, 128, 128, 0.19); color: #49ca8a"
+              >
+                Upgrade Now<i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+          
+        </div>
+        <div class="row mt-3 text-center">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card mb-4 rounded-3">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Basic</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title fw-bold">
+                  <sup>$</sup> 100
+                </h1>
+                <ul class="list mt-3 mb-4 text-start">
+                  <li class="pb-2">Access to 5 courses per month</li>
+                  <li class="pb-2">Limited access to quizzes and assignments</li>
+                  <li class="pb-2">Email support</li>
+                  <li class="pb-2">Priced at $10 per month</li>
+                </ul>
+                <button
+                  type="button"
+                  class="w-100 btn fw-bold"
+                  style="background-color: whitesmoke"
+                >
+                  UPGRADE
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card mb-4 rounded-3">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Standard</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title fw-bold">
+                  <sup>$</sup> 300
+                </h1>
+                <ul class="list mt-3 mb-4 text-start">
+                  <li class="pb-2">Access to 15 courses per month</li>
+                  <li class="pb-2">
+                    Unlimited access to quizzes and assignments
+                  </li>
+                  <li class="pb-2">Email & Chat support</li>
+                  <li class="pb-2">Personalized Learning Reccomendations</li>
+                </ul>
+                <button
+                  type="button"
+                  class="w-100 btn fw-bold text-light"
+                  style="background-color: #49ca8a"
+                >
+                  UPGRADE
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card mb-4 rounded-3">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Premium</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title fw-bold">
+                  <sup>$</sup> 500
+                </h1>
+                <ul class="list mt-3 mb-4 text-start">
+                  <li class="pb-2">Unlimited access to all courses</li>
+                  <li class="pb-2">Priority e-mail, phone, and chat support</li>
+                  <li class="pb-2">Personalized mentorship and coaching</li>
+                  <li class="pb-2">special access to exclusive content</li>
+                </ul>
+                <button
+                  type="button"
+                  class="w-100 btn fw-bold"
+                  style="background-color: whitesmoke"
+                >
+                  UPGRADE
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Offer -->
+
+      <div class="offer">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <img
+                src="https://source.unsplash.com/QSSgHlpj2kU/500x300/"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <p class="fs-2 fw-bold">
+                Become An<span style="color: #49ca8a"> Instructor</span>
+              </p>
+              <p style="color: rgba(128, 128, 128, 0.715)">
+                Instructors From Around The World Teach Millions Of Students On
+                Our Platform We Provide The Tools And Skills To Teach What You
+                Love.
+              </p>
+              <button
+                class="rounded-pill text-light px-5 py-3 border-0"
+                style="background-color: #49ca8a"
+              >
+                Start Teaching Today <i class="bi bi-arrow-up-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+
+      <div
+        class="container text-light"
+        style="background-color: #0e1218"
+        id="footer"
+      >
+        <footer class="row py-5 mt-5 border-top">
+          <div class="col-lg-3 col-sm-12">
+            <p class="text-light text-start fs-4 fw-bold text-center">
+              <i class="bi bi-power"></i> UiXSHVO
+            </p>
+            <p class="d-flex justify-content-center align-items-end">
+              <i class="bi bi-instagram me-3"></i>
+              <i class="bi bi-facebook me-3"></i>
+              <i class="bi bi-twitter"></i>
+            </p>
+          </div>
+
+          <div class="col col-lg-3 col-md-6 col-sm-6">
+            <h5>Welcome</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-light">Get Started</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-light">Log in</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-light">Become A Coach</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-light">Community</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-light">FAQ</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col col-lg-3 col-md-6 col-sm-6">
+            <h5>Library</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-light">MBA Hub</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-light">Deffered MBA Hub</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-light">Career Hub</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-light">Undergraduate Hub</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-light">Stories</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col col-lg-3 col-md-6 col-sm-6">
+            <h5>Company</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-light">Career</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-light">Terms of Use</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-light">Privacy Policy</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-light">Support</a>
+              </li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="border-top mt-5"></div>
+
+            <p class="text-center text-light">
+              <br />Copyright © 2023 All Rights Reserved
+            </p>
+          </div>
+        </footer>
+      </div>
+
+
+    </body>
+
+    <!-- Bootstrap JS -->
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"
+    ></script>
+
+
+    </html>
